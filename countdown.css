@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+body {
+    background: url(images/viktor-forgacs-q8XSCZYh6D8-unsplash.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.logo span {
+    margin: 5px;
+}
+.logo span:nth-child(2) {
+    color: coral;
+    margin: 0;
+}
+header a {
+    padding: 8px 18px;
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    border: 2px solid coral;
+}
+header a:hover {
+    background-color: white;
+    color: black;
+}
+.countdown {
+    position: relative;
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.countdown h1 {
+    font-size: 55px;
+}
+.box {
+    width: 170px;
+    height: 170px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+section {
+    margin: 2%;
+    width: 50%;
+}
+section h1 {
+    margin: 2% 0;
+    font-size: 3em;
+}
+section p {
+    font-size: 1.2em;
+}
+.contact-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    display: none;
+}
+.contact {
+    width: 80%;
+    height: 80vh;
+    background-color: crimson;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    margin: 10px;
+    width: 40%;
+}
